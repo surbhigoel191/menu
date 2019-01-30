@@ -1,0 +1,39 @@
+import csv
+csv_file = open('C:/Users/Surbhi/Desktop/menu.csv')
+csv_reader = csv.reader(csv_file, delimiter = ',')
+date = int(input("Enter date from 16 to 31 of which menu you want to see: "))
+for row in csv_reader:
+   d = [row[1],row[2], row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12],row[13],row[14],row[15],row[16]]
+   if date == 16:
+      print(d[0])
+   elif date == 17:
+      print(d[1])
+   elif date == 18:
+      print(d[2])
+   elif date == 19:
+      print(d[3])
+   elif date == 20:
+      print(d[4])
+   elif date == 21:
+      print(d[5])
+   elif date == 22:
+      print(d[6])
+   elif date == 23:
+      print(d[7])
+   elif date == 24:
+      print(d[8])
+   elif date == 25:
+      print(d[9])
+   elif date == 26:
+      print(d[10])
+   elif date == 27:
+      print(d[11])
+   elif date == 28:
+      print(d[12])
+   elif date == 29:
+      print(d[13])
+   elif date == 30:
+      print(d[14])
+   elif date == 31:
+      print(d[15])
+csv_file.close()
